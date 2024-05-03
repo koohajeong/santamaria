@@ -1,0 +1,121 @@
+/* 상단메뉴 고정 */
+.fixed {
+  position: fixed;
+  top: 0; z-index: 9999;
+}
+.menu-bg-fixed{
+  display: block;
+  position: fixed; top: 0;
+  opacity: 1;
+}
+
+/* 브랜드 제목 슬라이드 */
+@keyframes brand-title {
+  from {
+    transform: translate(0, -300px);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+.brand-title {
+  animation: brand-title 1.5s ease-in-out forwards;
+}
+
+/* 브랜드 본문 */
+@keyframes brand-subtitle {
+  from {
+    transform: translate(-400px, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+.brand-subtitle {
+  animation: brand-subtitle 1.5s ease-in-out forwards;
+}
+
+/* 브랜드 스토리 버튼 */
+@keyframes brand-a {
+  from {
+    margin-left: -300px;
+    opacity: 0;
+  }
+  to {
+    margin: 0;
+    opacity: 1;
+  }
+}
+
+/* 베스트 제목 */
+@keyframes best-h {
+  from {
+    transform: translate(0, 100px);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+.best-h {
+  animation: best-h 1s ease-in-out forwards;
+}
+
+/* 베스트 본문 */
+.best-p {
+  animation: best-h 1.5s ease-in-out forwards;
+}
+
+/* 베스트 사진 */
+@keyframes best-1 {
+  from {
+    top: 100px;
+    opacity: 0;
+  }
+  to {
+    top: 50px;
+    opacity: 1;
+  }
+}
+.best-1 {
+  animation: best-1 1s ease-in-out forwards;
+}
+@keyframes best-2 {
+  from {
+    bottom: 50px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+.best-2 {
+  animation: best-2 1s ease-in-out forwards;
+}
+
+/* 로사 */
+@keyframes rosa {
+  from {
+    transform: translate(0, -100px);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+.rosa-span {
+  animation: rosa 1s ease-in-out forwards;
+}
+.rosa-h {
+  animation: rosa 1.2s 0.5s ease-in-out forwards;
+}
+.rosa-p {
+  animation: rosa 1.2s 1s ease-in-out forwards;
+}
